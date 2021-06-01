@@ -1,0 +1,39 @@
+.icon {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    position: relative;
+}
+.icon:after {
+    content: "\00d7";
+}
+
+.inputBox {
+    display: none;
+}
+
+.editMode .textBox {
+    display: none;
+}
+
+.editMode .inputBox {
+    display: inline-block;
+}
+
+.active .textBox{
+    opacity: 0.5;
+    position: relative;
+}
+
+.active .textBox:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    opacity: 0.5;
+    left: 0;
+    right: 0;
+    top: 50%;
+}
